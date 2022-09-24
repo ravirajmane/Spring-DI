@@ -1,0 +1,47 @@
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+"http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+
+<beans>
+<bean class="beans.Test" id="t1">
+
+<property name="price" value="50.5f"/>
+
+<property name="isAvailable" value="true"/>
+
+<property name="url" value="http://aws.instancename.rbu"/>
+
+<property name="dbproperties">
+	<list> <!-- ArrayList object to string/int/object array type-->
+		<value>oracledriver</value>
+		<value>oracleurl</value>
+		<value>username</value>
+		<value>password</value>
+	</list>
+</property>
+
+<property name="portNumber" value="8080"/>
+
+</bean>
+
+
+<bean class="beans.Test" id="t2">
+
+<property name="price" value="60.5f"/>
+
+<property name="isAvailable" value="true"/>
+
+<property name="url" value="http://aws.instancename.ds"/>
+
+<property name="dbproperties">
+	<list> <!-- ArrayList object to string/int/object array type-->
+		<value>mysqldriver</value>
+		<value>mysqlurl</value>
+		<value>username</value>
+		<value>password</value>
+	</list>
+</property>
+
+<property name="portNumber" value="8181"/>
+
+</bean>
+</beans>
